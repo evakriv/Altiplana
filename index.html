@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Altiplana</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/96f3e26a57.js" crossorigin="anonymous"></script>
+    <script type='text/javascript'
+        src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=ApajTxzpYsnLmjn5TeTYQXXGwhyMB-L1ou4PZplRp2aQYXU8zFF5Yg3KTT-xfV-T'
+        async defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="img/Logo_No-BG_JPG_50x.png" alt="logotip">
+            <ul class="menu ">
+                <a href="#">
+                    <li class="menuItem"> Domov </li>
+                </a>
+                <a href="#">
+                    <li class="menuItem"> Katalog </li>
+                </a>
+                <a href="#">
+                    <li class="menuItem">Kako jih izdelujemo?</li>
+                </a>
+                <a href="#">
+                    <li class="menuItem">Pogosta vprašanja</li>
+                </a>
+            </ul>
+            <i id='btnMenu' class="fa-solid fa-bars"></i>
+        </nav>
+        <div class="photo-container">
+            <img id="cover-photo" src="img/navbar.PNG" alt="girl with an earing">
+        </div>
+    </header>
+    <main>
+        <h2 class="title">Altiplana leseni uhani</h2>
+        <div class="products">
+            <section class="earings">
+                <div class="images">
+                    <img class="item-img hidden" src="img/cikel.PNG" alt="">
+                    <img class='item-img ' src="img/paragnostik.PNG" alt="">
+                </div>
+                <div class="text">
+                    <p>ALTIPLANA</p>
+                    <h2>Cikel</h2>
+                    <p class="price">€ 13,90 EUR</p>
+                    <div class="size">
+                        <button>Normal</button>
+                        <button>XL</button>
+                    </div>
+                    <div class="addOrRemove">
+                        <button class="removeBtn">-</button>
+                        <input type="text" name="" id="" size="1">
+                        <button class="addBtn">+</button>
+                    </div>
+                    <button class="buy"> Dodaj v košarico </button>
+                </div>
+            </section>
+            <section class="earings">
+                <div class="images">
+                    <img class="item-img hidden" src="img/cikel.PNG" alt="">
+                    <img class='item-img ' src="img/paragnostik.PNG" alt="">
+                </div>
+                <div class="text">
+                    <p>ALTIPLANA</p>
+                    <h2>Cikel</h2>
+                    <p class="price">€ 13,90 EUR</p>
+                    <div class="size">
+                        <button>Normal</button>
+                        <button>XL</button>
+                    </div>
+                    <div class="addOrRemove">
+                        <button class="removeBtn">-</button>
+                        <input type="text" name="" id="" size="1">
+                        <button class="addBtn">+</button>
+                    </div>
+                    <button class="buy"> Dodaj v košarico </button>
+                </div>
+            </section>
+            <section class="earings">
+                <div class="images">
+                    <img class="item-img hidden" src="img/cikel.PNG" alt="">
+                    <img class='item-img ' src="img/paragnostik.PNG" alt="">
+                </div>
+                <div class="text">
+                    <p>ALTIPLANA</p>
+                    <h2>Cikel</h2>
+                    <p class="price">€ 13,90 EUR</p>
+                    <div class="size">
+                        <button>Normal</button>
+                        <button>XL</button>
+                    </div>
+                    <div class="addOrRemove">
+                        <button class="removeBtn">-</button>
+                        <input type="text" name="" id="" size="1">
+                        <button class="addBtn">+</button>
+                    </div>
+                    <button class="buy"> Dodaj v košarico </button>
+                </div>
+            </section>
+        </div>
+        <div>
+            <h2>Kje nas najdete?</h2>
+            <div id="myMap" style='position:relative;width:600px;height:400px;'></div>
+        </div>
+    </main>
+</body>
+
+</html>

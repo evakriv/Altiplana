@@ -1,0 +1,123 @@
+*{  margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 30px;
+    
+}
+#btnMenu{
+    display:none;
+}
+
+.menu a{
+    display:inline-block;
+    margin:0px 10px; 
+    list-style-type:square;
+}
+a:visited{
+    text-decoration: none;
+    color:black;
+    cursor:pointer;
+}
+ 
+#cover-photo{
+    width:100%;
+    object-fit:cover;  
+}
+
+/*styling of the main part*/
+.title{
+    text-align: center;
+    margin:15px;
+}
+.products{
+    width:100%;
+    margin:auto;
+    background-color: bisque;
+    margin:auto;
+
+}
+.earings{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items:center;
+    border-radius: 10px;
+    margin:15px;
+    box-shadow: 3px 3px 3px grey;
+}
+.images img{
+    width:100%;
+    height:auto;
+}
+
+.text{
+    width:100%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    font-size:clamp(0.7rem,1rem,2rem);
+    gap: 5px;
+}
+.addOrRemove{
+    max-width:auto;
+    height:1.5rem;
+    border: grey 1px solid;
+}
+input{
+    border:none;
+    background: none;
+    text-align: center;
+}
+.addBtn,.removeBtn{
+    width:1rem;
+    margin:5px 0;
+    background: none;
+    border:none;
+}
+
+.hidden{
+    display:none;
+    opacity:0%
+    
+}
+
+@media only screen and (max-width:720px){
+    #btnMenu{
+        display:block;}
+
+    .menu{
+        position: absolute;
+        display: flex;
+        flex-direction:column;
+        right:0px;
+        top:76px;
+        background-color: white;
+        width:50%;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(100%); 
+        transition: 0.5s ease-in-out;
+        width: 100%;
+        opacity: 90%;
+        margin-top: 10px;
+    }
+    .menuItem{
+        opacity:0%;
+        transition: 0.7s ease-in;
+        padding: 1px;
+        font-family: 'Whisper', cursive;
+        font-size: 15px;
+    }
+
+    .menu-open{
+        transform: translateX(0%); 
+    }
+}
