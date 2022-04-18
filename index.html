@@ -22,16 +22,16 @@
             <img src="img/Logo_No-BG_JPG_50x.png" alt="logotip">
             <ul class="menu ">
                 <a href="#">
-                    <li class="menuItem"> Domov </li>
+                    <li class="menuItem"> Naša zgodba</li>
                 </a>
-                <a href="#">
+                <a href="#productInfo">
                     <li class="menuItem"> Katalog </li>
                 </a>
                 <a href="#">
                     <li class="menuItem">Kako jih izdelujemo?</li>
                 </a>
-                <a href="#">
-                    <li class="menuItem">Pogosta vprašanja</li>
+                <a href="#contactInfo">
+                    <li class="menuItem">Kontakt</li>
                 </a>
             </ul>
             <i id='btnMenu' class="fa-solid fa-bars"></i>
@@ -41,76 +41,97 @@
         </div>
     </header>
     <main>
-        <h2 class="title">Altiplana leseni uhani</h2>
-        <div class="products">
-            <section class="earings">
-                <div class="images">
-                    <img class="item-img hidden" src="img/cikel.PNG" alt="">
-                    <img class='item-img ' src="img/paragnostik.PNG" alt="">
-                </div>
-                <div class="text">
-                    <p>ALTIPLANA</p>
-                    <h2>Cikel</h2>
-                    <p class="price">€ 13,90 EUR</p>
-                    <div class="size">
-                        <button>Normal</button>
-                        <button>XL</button>
-                    </div>
-                    <div class="addOrRemove">
-                        <button class="removeBtn">-</button>
-                        <input type="text" name="" id="" size="1">
-                        <button class="addBtn">+</button>
-                    </div>
-                    <button class="buy"> Dodaj v košarico </button>
-                </div>
-            </section>
-            <section class="earings">
-                <div class="images">
-                    <img class="item-img hidden" src="img/cikel.PNG" alt="">
-                    <img class='item-img ' src="img/paragnostik.PNG" alt="">
-                </div>
-                <div class="text">
-                    <p>ALTIPLANA</p>
-                    <h2>Cikel</h2>
-                    <p class="price">€ 13,90 EUR</p>
-                    <div class="size">
-                        <button>Normal</button>
-                        <button>XL</button>
-                    </div>
-                    <div class="addOrRemove">
-                        <button class="removeBtn">-</button>
-                        <input type="text" name="" id="" size="1">
-                        <button class="addBtn">+</button>
-                    </div>
-                    <button class="buy"> Dodaj v košarico </button>
-                </div>
-            </section>
-            <section class="earings">
-                <div class="images">
-                    <img class="item-img hidden" src="img/cikel.PNG" alt="">
-                    <img class='item-img ' src="img/paragnostik.PNG" alt="">
-                </div>
-                <div class="text">
-                    <p>ALTIPLANA</p>
-                    <h2>Cikel</h2>
-                    <p class="price">€ 13,90 EUR</p>
-                    <div class="size">
-                        <button>Normal</button>
-                        <button>XL</button>
-                    </div>
-                    <div class="addOrRemove">
-                        <button class="removeBtn">-</button>
-                        <input type="text" name="" id="" size="1">
-                        <button class="addBtn">+</button>
-                    </div>
-                    <button class="buy"> Dodaj v košarico </button>
-                </div>
-            </section>
+        <div class="headlineText">
+            <h1 class="title">Altiplana leseni uhani</h1>
+            <p>Skrbno izbran nabor elegantnih stilov, naravnih in zemeljnih barv ter eksotičnih materialov bo tvojemu
+                stilu
+                dodal tisto malenkost, ki zaključi zgodbo.</p>
         </div>
-        <div>
-            <h2>Kje nas najdete?</h2>
-            <div id="myMap" style='position:relative;width:600px;height:400px;'></div>
+        <div id='productInfo' class="products">
+            <article class="earings">
+                <div class="images">
+                    <img class="item-img hidden" src="img/cikel.PNG" alt="">
+                    <img class='item-img ' src="img/cikel2.jpg" alt="">
+                </div>
+                <div class="text">
+                    <p>ALTIPLANA</p>
+                    <h2>Cikel</h2>
+                    <p class="price">€ 13,90 EUR</p>
+                    <div class="size">
+                        <button>Normal</button>
+                        <button>XL</button>
+                    </div>
+                    <div class="addOrRemove">
+                        <button class="removeBtn">-</button>
+                        <input type="text" name="" id="amount" size="1" value="1">
+                        <button class="addBtn">+</button>
+                    </div>
+                    <button class="buy"> Dodaj v košarico </button>
+                </div>
+            </article>
+            <article class="earings">
+                <div class="images">
+                    <img class="item-img hidden" src="img/list.jpg" alt="">
+                    <img class='item-img ' src="img/list2.jpg" alt="">
+                </div>
+                <div class="text">
+                    <p>ALTIPLANA</p>
+                    <h3></h3>
+                    <h2>List</h2>
+                    <p class="price">€ 13,90 EUR</p>
+                    <div class="size">
+                        <button>Normal</button>
+                        <button>XL</button>
+                    </div>
+                    <div class="addOrRemove">
+                        <button class="removeBtn">-</button>
+                        <input type="text" name="" id="amount" size="1" value="1">
+                        <button class="addBtn">+</button>
+                    </div>
+                    <button class="buy"> Dodaj v košarico </button>
+                </div>
+            </article>
+            <article class="earings">
+                <div class="images">
+                    <img class="item-img hidden" src="img/mandala1.jpg" alt="">
+                    <img class='item-img ' src="img/mandala4.jpg" alt="">
+                </div>
+                <div class="text">
+                    <p>ALTIPLANA</p>
+                    <h2>Cikel</h2>
+                    <p class="price">€ 13,90 EUR</p>
+                    <div class="size">
+                        <button>Normal</button>
+                        <button>XL</button>
+                    </div>
+                    <div class="addOrRemove">
+                        <button class="removeBtn">-</button>
+                        <input type="text" name="" id="amount" size="1" value="1">
+                        <button class="addBtn">+</button>
+                    </div>
+                    <button class="buy"> Dodaj v košarico </button>
+                </div>
+            </article>
         </div>
+        <footer id="contactInfo" class="contact">
+            <div class="map">
+                <p>Kje nas lahko obiščete?</p>
+                <div id="myMap">
+                </div>
+            </div>
+            <div class="socialMedia">
+                <address>
+                    <p>Email naslov:<a href="mailto: altiplana@gmail.com"> altiplana@gmail.com</a></p>
+                    <p>Telefonska številka:<a href="tel:+1232424 343"> +1232424 343</a></p>
+                </address>
+                <h2>Sledite nam na socialnih omrežjih!</h2>
+                <div class="icons">
+                    <i class="fa-brands fa-instagram  fa-2xl "></i>
+                    <i class="fa-brands fa-facebook fa-2xl"></i>
+                    <i class="fa-brands fa-twitter fa-2xl"></i>
+                </div>
+            </div>
+        </footer>
     </main>
 </body>
 

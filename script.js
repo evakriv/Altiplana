@@ -4,6 +4,11 @@ let btnMenu = document.querySelector('#btnMenu');
 let menu = document.querySelector('.menu');
 let menuItem = document.querySelectorAll('.menuItem')
 let productImage = document.querySelectorAll('.item-img');
+let removeBtns = document.querySelectorAll('.removeBtn');
+let addBtns = document.querySelectorAll('.addBtn');
+let inputs = document.querySelectorAll('#amount');
+
+
 
 
 // responsive navbar
@@ -22,6 +27,28 @@ const slideShow = () => {
     });
 }
 setInterval(slideShow, 3000);
+//setting input field value to 1
+inputs.forEach(input => {
+    input.value = '1';
+})
+//input field
+removeBtns.forEach(removeBtn => {
+    removeBtn.addEventListener('click', () => {
+        inputs.forEach(input => {
+            if (input.value > 1) {
+                input.value--;
+            };
+        });
+    });
+});
+addBtns.forEach(addBtn => {
+    addBtn.addEventListener('click', () => {
+        inputs.forEach(input => {
+            input.value++
+        });
+    });
+});
+
 
 //maps
 var map;
